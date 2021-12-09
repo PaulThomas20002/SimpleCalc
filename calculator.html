@@ -1,0 +1,82 @@
+<html>
+
+
+<head>
+<title>Calculator</title>
+<script language="javascript">
+function sum()
+{
+var x,y,z;
+x=Number(document.calc.txtin1.value);
+y=Number(document.calc.txtin2.value);
+z=x+y;
+document.calc.txtout.value=z;
+}
+function sub()
+{
+var x,y,z;
+x=document.calc.txtin1.value;
+y=document.calc.txtin2.value;
+z=x-y;
+document.calc.txtout.value=z;
+}
+function mult()
+{
+var x,y,z;
+x=document.calc.txtin1.value;
+y=document.calc.txtin2.value;
+z=x*y;
+document.calc.txtout.value=z;
+}
+function div()
+{
+var x,y,z;
+x=document.calc.txtin1.value;
+y=document.calc.txtin2.value;
+z=x/y;
+document.calc.txtout.value=z;
+}
+</script>
+</head>
+
+
+<body leftmargin="375">
+<form name="calc">
+<br>
+<br>
+
+<fieldset>
+<legend>Calculator</legend>
+<center>
+<input type="text" name="txtin1" size="6">
+<input type="text" name="txtin2" size="6"><br>
+= <input type="text" name="txtout" size="10">
+<br>
+<input type="button" value="+" onClick="sum()">&nbsp&nbsp&nbsp
+<input type="button" value="-" onClick="sub()">&nbsp&nbsp&nbsp
+
+<br><br>
+<input type="button" value="x" onClick="mult()">&nbsp&nbsp&nbsp
+<input type="button" value="/" onClick="div()">&nbsp&nbsp&nbsp
+
+<br><br>
+
+<input type="button" value="1" onClick="1()">
+<input type="button" value="2" onClick="2()">
+<input type="button" value="3" onClick="3()"><br>
+<input type="button" value="4" onClick="4()">
+<input type="button" value="5" onClick="5()">
+<input type="button" value="6" onClick="6()"><br>
+<input type="button" value="7" onClick="7()">
+<input type="button" value="8" onClick="8()">
+<input type="button" value="9" onClick="9()"><br>
+<input type="button" value="0" onClick="0()">
+<br><br>
+<input type="reset" value="CE">
+</center>
+</fieldset>
+</form>
+</body>
+
+
+</html>
